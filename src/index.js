@@ -4,9 +4,9 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import './index.css';
 import App from './components/App';
-import bookReducer from './reducers/index';
+import bookReducer from './reducers/books';
 
-const store = createStore(bookReducer(), { books: [] });
+const store = createStore(bookReducer, { books: [] });
 
 ReactDOM.render(
   <Provider store={store}>
