@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Book from '../components/Book';
 
 const BooksList = ({ books }) => {
-  books.map(book => <Book book={book} key={book.BookID} />);
+  const bookss = books.map(book => (<Book book={book} key={123} />));
 
   return (
     <table>
@@ -19,7 +19,7 @@ const BooksList = ({ books }) => {
           Book Category
         </th>
       </tr>
-      {books}
+      {bookss}
     </table>
   );
 };

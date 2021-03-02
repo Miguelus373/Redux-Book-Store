@@ -4,9 +4,22 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import './index.css';
 import App from './components/App';
-import bookReducer from './reducers/books';
+import rootReducer from './reducers/index';
 
-const store = createStore(bookReducer, { books: [] });
+const defaultBook = [
+  {
+    BookID: 1,
+    title: 'Da Vinci Code',
+    category: 'Actions',
+  },
+  {
+    BookID: 2,
+    title: 'Harry Potter',
+    category: 'Sci-fi',
+  },
+];
+
+const store = createStore(rootReducer, { books: defaultBook });
 
 ReactDOM.render(
   <Provider store={store}>
