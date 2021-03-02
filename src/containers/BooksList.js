@@ -53,10 +53,5 @@ const mapStateToProps = state => ({ books: state.bookReducer });
 const mapDispatchToProps = {
   REMOVE_BOOK,
 };
-// const mapDispatchToProps = dispatch => ({
-//   REMOVE_BOOK: bookID => {
-//     dispatch(REMOVE_BOOK(bookID));
-//   },
-// });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
