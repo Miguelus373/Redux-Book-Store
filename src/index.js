@@ -8,18 +8,18 @@ import rootReducer from './reducers/index';
 
 const defaultBook = [
   {
-    BookID: 1,
+    bookID: 1,
     title: 'Da Vinci Code',
     category: 'Actions',
   },
   {
-    BookID: 2,
+    bookID: 2,
     title: 'Harry Potter',
     category: 'Sci-fi',
   },
 ];
 
-const store = createStore(rootReducer, { books: defaultBook });
+const store = createStore(rootReducer, { bookReducer: defaultBook });
 
 ReactDOM.render(
   <Provider store={store}>
