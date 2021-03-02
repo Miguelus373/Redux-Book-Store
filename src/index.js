@@ -8,12 +8,12 @@ import rootReducer from './reducers/index';
 
 const defaultBook = [
   {
-    bookID: 1,
+    bookID: Math.floor(Math.random() * 25),
     title: 'Da Vinci Code',
     category: 'Actions',
   },
   {
-    bookID: 2,
+    bookID: Math.floor(Math.random() * 125),
     title: 'Harry Potter',
     category: 'Sci-fi',
   },
