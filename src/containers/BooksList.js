@@ -24,7 +24,7 @@ class BooksList extends React.Component {
 
   bookFilter(filter) {
     const { books } = this.props;
-    if (filter === 'ALL') {
+    if (filter === 'All') {
       return books;
     }
     return books.filter(({ category }) => category === filter);
