@@ -17,13 +17,16 @@ class BooksList extends React.Component {
     REMOVE_BOOK(bookID);
   }
 
-  handleFilterChange(filter) {
+  handleFilterChange(e) {
     const { CHANGE_FILTER } = this.props;
-    CHANGE_FILTER(filter);
+    CHANGE_FILTER(e.target.value);
   }
 
   bookFilter(filter) {
     const { books } = this.props;
+    if (filter === 'ALL') {
+      return books;
+    }
     return books.filter(({ category }) => category === filter);
   }
 
@@ -66,7 +69,7 @@ BooksList.propTypes = {
   filter: PropTypes.string.isRequired,
 };
 
-const mapStateToProps = state => ({ books: state.bookReducer, filter: state.CategoryFilter });
+const mapStateToProps = state => ({ books: state.bookReducer, filter: state.filterReducer });
 
 const mapDispatchToProps = {
   REMOVE_BOOK,
