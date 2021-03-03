@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './components/App';
 import rootReducer from './reducers/index';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const defaultBook = [
   {
