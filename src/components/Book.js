@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import progressBarCircle from '../assets/progressBarCircle.png';
 
 const Book = ({ book, handleRemoveBook }) => {
   const { bookID, title, category } = book;
@@ -26,7 +27,9 @@ const Book = ({ book, handleRemoveBook }) => {
           <span className="text-info">Edit</span>
         </div>
         <div className="d-flex flex-row justify-content-between my-2 p-4 border-right">
-          <div>image</div>
+          <div>
+            <img src={progressBarCircle} alt="progressbar" />
+          </div>
           <div className="ml-2">
             <div className="h2">64%</div>
             <div><small>Completed</small></div>
