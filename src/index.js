@@ -10,12 +10,12 @@ const defaultBook = [
   {
     bookID: Math.floor(Math.random() * 25),
     title: 'Da Vinci Code',
-    category: 'Actions',
+    category: 'Action',
   },
   {
     bookID: Math.floor(Math.random() * 125),
     title: 'Harry Potter',
-    category: 'Sci-fi',
+    category: 'Sci-Fi',
   },
 ];
 
