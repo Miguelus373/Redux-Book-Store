@@ -9,12 +9,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const defaultBook = [
   {
-    bookID: Math.floor(Math.random() * 25),
+    bookID: Math.floor(Math.random() * 150),
+    title: 'Ethical Hacking',
+    category: 'Learning',
+  },
+  {
+    bookID: Math.floor(Math.random() * 50),
     title: 'Da Vinci Code',
     category: 'Action',
   },
   {
-    bookID: Math.floor(Math.random() * 125),
+    bookID: Math.floor(Math.random() * 100),
     title: 'Harry Potter',
     category: 'Sci-Fi',
   },

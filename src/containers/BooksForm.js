@@ -39,13 +39,13 @@ class BooksForms extends React.Component {
   render() {
     const { title, category } = this.state;
     return (
-      <div className="wrapper-all px-5">
+      <div className="wrapper-all px-5 my-4">
         <div className="title-wrapper">
-          <h4 className="text-uppercase  text-secondary font-weight-bold">Add new book</h4>
+          <h4 className="text-uppercase text-secondary font-weight-bold">Add new book</h4>
         </div>
-        <div className="books-form container justify-content-between align-items-center my-1 py-4">
+        <div className="books-form container-fluid justify-content-between align-items-center my-1 py-3">
           <form onSubmit={this.handleSubmit} className="row">
-            <input onChange={this.handleChange} value={title} name="title" type="text" placeholder="Book title" className="col-6 py-1 pl-2 text-muted border-0" />
+            <input onChange={this.handleChange} value={title} name="title" type="text" placeholder="Book title" className="col-6 py-1 text-muted border-0" />
             <select onChange={this.handleChange} value={category} name="category" className="col-3 py-2 mx-4 border-0 bg-white text-secondary">
               {categories.map(category => (<option key={category}>{category}</option>))}
             </select>

@@ -35,7 +35,7 @@ class BooksList extends React.Component {
     const books = this.bookFilter(filter);
 
     return (
-      <div className="px-5 py-3">
+      <div className="px-5">
         <CategoryFilter handleFilterChange={this.handleFilterChange} />
         {books.map(book => (
           <Book

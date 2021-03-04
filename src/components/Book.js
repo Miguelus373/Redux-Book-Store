@@ -6,15 +6,11 @@ const Book = ({ book, handleRemoveBook }) => {
   const { bookID, title, category } = book;
   return (
     <>
-      <div className="row justify-content-between my-2 p-2 w-100 bg-white">
+      <div className="row justify-content-between my-3 p-0 w-100 bg-white">
         <div className="justify-content-between align-items-center my-2 p-4 w-50">
           <span>{category}</span>
           <h4>{title}</h4>
-          <span className="hidden">
-            ID:
-            {' '}
-            {bookID}
-          </span>
+          <span>Author</span>
           <br />
           <span className="text-info">Comments</span>
           <button
@@ -26,7 +22,7 @@ const Book = ({ book, handleRemoveBook }) => {
           </button>
           <span className="text-info">Edit</span>
         </div>
-        <div className="d-flex flex-row justify-content-between my-2 p-4 border-right">
+        <div className="d-flex flex-row align-items-center justify-content-between mr-3 pr-5">
           <div>
             <img src={progressBarCircle} alt="progressbar" />
           </div>
@@ -35,7 +31,7 @@ const Book = ({ book, handleRemoveBook }) => {
             <div><small>Completed</small></div>
           </div>
         </div>
-        <div className="d-flex flex-column my-2 p-4">
+        <div className="d-flex flex-column ml-5 my-2 p-4 pl-5 border-left">
           <div className="mx-2 text-uppercase text-muted">Current chapter</div>
           <div className=" h6 mx-2 mb-2 text-muted">Introduction</div>
           <button type="button" className="btn btn-primary border-0 mr-3 mt-3 ml-1 text-uppercase">

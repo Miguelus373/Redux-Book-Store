@@ -1,19 +1,13 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
 import BooksList from '../containers/BooksList';
 import BooksForm from '../containers/BooksForm';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <div className="bg-light">
-      <Navbar className="bg-white">
-        <div className="d-flex flex-row justify-content-between align-items-center">
-          <h1 className="text-primary mx-5">Bookstore CMS</h1>
-          <span className="mx-3 text-uppercase">Books</span>
-          <span className="mx-3 text-uppercase text-muted">Categories</span>
-        </div>
-      </Navbar>
-      <div className="container">
+      <Navbar />
+      <div className="container-fluid px-5 py-3">
         <BooksList />
         <BooksForm />
       </div>
