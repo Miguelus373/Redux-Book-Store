@@ -2,6 +2,8 @@
 
 > In this project we developed a Bookstore App to save books with their title and category. We can also filter the books by categories or remove them from the bookstore.
 
+![screenshot](./src/assets/screenshot.png)
+
 ## Built With
 
 - Javascript ES6
